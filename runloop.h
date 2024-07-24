@@ -244,6 +244,7 @@ struct runloop
 
    runloop_core_status_msg_t core_status_msg;
 
+   int entry_state_slot;
    unsigned msg_queue_delay;
    unsigned pending_windowed_scale;
    unsigned max_frames;
@@ -251,7 +252,6 @@ struct runloop
    unsigned fastforward_after_frames;
    unsigned perf_ptr_libretro;
    unsigned subsystem_current_count;
-   unsigned entry_state_slot;
    unsigned video_swap_interval_auto;
 
    fastmotion_overrides_t fastmotion_override; /* float alignment */

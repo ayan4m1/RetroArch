@@ -7276,7 +7276,7 @@ static bool retroarch_parse_input_and_config(
                break;
             case 'e':
                {
-                  unsigned entry_state_slot = (unsigned)strtoul(optarg, NULL, 0);
+                  int entry_state_slot = strtol(optarg, NULL, 0);
 
                   if (entry_state_slot)
                      runloop_st->entry_state_slot = entry_state_slot;
